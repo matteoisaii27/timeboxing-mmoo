@@ -1,0 +1,148 @@
+/* Estilo global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  color: #222;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #357ab8;
+  transform: scale(1.05);
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74,144,226,0.4);
+}
+
+/* LOGIN */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  width: 380px;
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* DASHBOARD */
+.dashboard {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  animation: fadeIn 0.8s ease;
+}
+
+.dashboard .cards {
+  display: flex;
+  gap: 25px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.dashboard .card {
+  flex: 1;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  background: white;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* PLANNER */
+.planner {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  animation: fadeIn 0.8s ease;
+}
+
+.planner section {
+  margin-bottom: 35px;
+}
+
+.priority-inputs {
+  display: flex;
+  gap: 15px;
+}
+
+.brain-dump textarea {
+  width: 100%;
+  height: 140px;
+  resize: none;
+}
+
+.schedule .row {
+  display: grid;
+  grid-template-columns: 80px 1fr 80px 1fr;
+  gap: 15px;
+}
+
+.schedule input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.schedule input:focus {
+  background: #eaf4ff;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
